@@ -6,7 +6,7 @@ The Healthcare Management System is a web-based platform designed to securely st
 
 Features:
 
-   Student Features
+   Student Features->
 
       View Medical History: Access past records, prescriptions, and diagnostic reports.
 
@@ -19,14 +19,14 @@ Features:
       Receive Notifications: Alerts for appointments, prescription refills, and checkups.
 
 
-   Doctor Features
+   Doctor Features->
 
       Manage Appointments: Accept or reject appointment requests.
 
       Update Health Records: Add diagnoses, prescriptions, and treatment history.
 
 
-   Admin Features
+   Admin Features->
 
       Manage Users: Control student and doctor accounts.
 
@@ -49,5 +49,7 @@ Deployment: Vercel
 
 
 
-Team Members: [Your Names Here]
-For any queries, contact: [Your Email Here]
+Team Members: Priyanshu Patil
+              Muskan Shukla
+              Harshad Panse
+              Pratham Raut
