@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
 
+    const [showMenu,setShowMenu]=useState()
     const navigate=useNavigate()
     const [token,setToken]=useState(true)
   return (
@@ -34,6 +35,22 @@ const Navbar = () => {
                 </div>:
                 <button onClick={()=>navigate('/login')} className='bg-blue-500 rounded-full px-8 py-3 text-white font-light hidden md:block'>Create account</button>
             }
+
+            <img onClick={()=>setShowMenu(true)} className='w-6 md:hidden' src='menu.svg'/>
+
+            <div className={`${showMenu? 'fixed w-full' : 'h-0 w-0' } md:hidden right-0 top-0 bottom-0 z-20 overflow-hidden bg-white transition-all`}>
+                <div className='flex justify-end px-8 py-6'>
+                    <img onClick={()=>setShowMenu(false)} className='w-8' src="cross.png" alt="" />
+                </div>
+                <div>
+                    <ul className='flex flex-col items-center gap-2 mt-5 text-lg font-medium'>
+                    <NavLink className='px-4 py-2 rounded inline-block' onClick={()=>setShowMenu(false)}  to={'/'}>Home</NavLink>
+                    <NavLink className='px-4 py-2 rounded inline-block' onClick={()=>setShowMenu(false)} to={'/doctor'}>All Doctors</NavLink>
+                    <NavLink className='px-4 py-2 rounded inline-block' onClick={()=>setShowMenu(false)} to={'/profile'}>Profile</NavLink>
+                    <NavLink className='px-4 py-2 rounded inline-block' onClick={()=>setShowMenu(false)} to={'/login'}>Logout</NavLink>
+                    </ul>
+                </div>
+            </div>
             
         </div>
     </div>
