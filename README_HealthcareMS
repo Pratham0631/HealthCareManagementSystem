@@ -1,0 +1,53 @@
+Healthcare Management System for Students
+
+Introduction:
+
+The Healthcare Management System is a web-based platform designed to securely store and manage student health records within educational institutes. It provides students with easy access to their medical history, appointment booking, and automated documentation for leave permissions.
+
+Features:
+
+   Student Features
+
+      View Medical History: Access past records, prescriptions, and diagnostic reports.
+
+      Book Appointments: Schedule consultations with trusted doctors.
+
+      Download Health Records: Generate and download health reports as PDFs.
+
+      Request Medical Certificates: Get official documentation for leave permissions.
+
+      Receive Notifications: Alerts for appointments, prescription refills, and checkups.
+
+
+   Doctor Features
+
+      Manage Appointments: Accept or reject appointment requests.
+
+      Update Health Records: Add diagnoses, prescriptions, and treatment history.
+
+
+   Admin Features
+
+      Manage Users: Control student and doctor accounts.
+
+      Monitor System Logs: Ensure smooth functioning and security.
+
+
+
+Tech Stack:
+
+Frontend: React.js (Vite), Tailwind CSS
+
+Backend: Express.js
+
+Database: MongoDB
+
+Authentication: JWT (JSON Web Token) for secure login
+
+Deployment: Vercel
+
+
+
+
+Team Members: [Your Names Here]
+For any queries, contact: [Your Email Here]
