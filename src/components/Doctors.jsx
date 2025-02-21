@@ -43,7 +43,7 @@ const Doctors = () => {
           ))}
         </div>
 
-        <Link className="bg-blue-200 px-8 py-3 rounded-full mt-8 text-gray-800">
+        <Link to={'/doctor'} onClick={() => window.scrollTo(0, 0)} className="bg-blue-200 px-8 py-3 rounded-full mt-8 text-gray-800">
           More
         </Link>
       </div>

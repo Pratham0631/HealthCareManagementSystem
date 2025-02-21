@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Speciality = () => {
     const data=[
@@ -24,6 +24,8 @@ const Speciality = () => {
             image:"Neurologist.svg"
         }
     ]
+
+    const navigate=useNavigate()
   return (
     <div className='flex flex-col items-center  gap-4 py-16 text-gray-800'>
         <h1 className='text-3xl font-medium'>Find by Speciality </h1>
@@ -32,12 +34,13 @@ const Speciality = () => {
         <div className='flex justify-center items-center gap-8 pt-5 w-full flex-wrap  '>
             {
                 data.map((item,index)=>
-                    <Link key={index} to={`/doctor/${item.speciality}`} className='flex flex-col items-center hover:translate-y-[-10px] transition-all duration-500'>
+                    <div key={index} onClick={()=>{navigate(`/doctor/${item.speciality}`);scrollTo(0,0)}} className='flex flex-col items-center hover:translate-y-[-10px] transition-all duration-500'>
                         <img src={item.image} alt="" className='w-16 mb-2 sm:w-24 ' />
                         <p className='text-center text-sm'>{item.speciality}</p>
-                    </Link>
+                    </div>
                 )
             }
+            {/* to={`/doctor/${item.speciality}`} */}
         </div>
     </div>
   )

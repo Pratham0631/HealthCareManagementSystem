@@ -1,10 +1,9 @@
 import { useState } from "react";
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Doctor from "./pages/Doctor";
 import Login from "./pages/Login";
-import MyProfile from "./pages/myProfile";
+import MyProfile from "./pages/MyProfile";
 import MyAppontment from "./pages/MyAppontment";
 import Appointment from "./pages/Appointment";
 import Navbar from "./components/Navbar";
