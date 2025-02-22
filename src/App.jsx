@@ -8,6 +8,9 @@ import MyAppontment from "./pages/MyAppontment";
 import Appointment from "./pages/Appointment";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import AppForm from "./pages/AppForm";
+import DoctorLogin from "./pages/DoctorLogin";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,6 +28,9 @@ function App() {
           <Route path="/profile" element={<MyProfile />} />
           <Route path="/my-appointment" element={<MyAppontment />} />
           <Route path="/appointment/:docId" element={<Appointment />} />
+          <Route path="/appform" element={<AppForm/>}/>
+          <Route path="/doctorlogin" element={<DoctorLogin/>}/>
+          <Route path="/dashboard" element={<Dashboard/>}/>
         </Routes>
 
         <Footer/>

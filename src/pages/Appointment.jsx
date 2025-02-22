@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
 
 const Appointment = () => {
 
   const {docId}=useParams()
-
+  const navigate=useNavigate()
   const value=useContext(AppContext)
 
   const [docSlots,setDocSlots]=useState([])
@@ -51,7 +51,7 @@ const Appointment = () => {
         currentDate.setMinutes(currentDate.getMinutes()+30)
       }
 
-      setDocSlots(prev=>({...prev,timeSlot}))
+      setDocSlots(prev=>([...prev,timeSlot]))
     }
 
     
@@ -93,6 +93,8 @@ const Appointment = () => {
             </div>
 
             <p className='text-sm mt-4 font-medium text-gray-800'>Appointment fees : {docInfo.fees}</p>
+
+            <button onClick={()=>{navigate('/appform');scrollTo(0,0)}} className='bg-blue-500 px-6 py-2 rounded-full outline-none border-none text-white font-medium  mt-5'>Book Appointment</button>
           </div>
 
 

@@ -1,11 +1,11 @@
 import React from "react";
 
-const Login = () => {
+const DoctorLogin = () => {
   return (
     <div className="flex justify-center mt-20 min-h-auto px-4">
       <div className="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
         <h1 className="text-3xl sm:text-4xl font-semibold text-center">
-          Login as User
+          Login as Doctor
         </h1>
 
         <div className="mt-6">
@@ -41,8 +41,8 @@ const Login = () => {
         </div>
 
         <div className="flex text-base sm:text-lg justify-center gap-2 sm:gap-5 mt-5">
-          <p className="font-thin text-md">Login as doctor ?</p>
-          <a href="/doctorlogin" className="text-blue-500 hover:underline text-md">
+          <p className="font-thin text-md">Login as User ?</p>
+          <a href="/login" className="text-blue-500 hover:underline text-md">
             Login
           </a>
         </div>
@@ -51,4 +51,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default DoctorLogin;
