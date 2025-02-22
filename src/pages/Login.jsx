@@ -1,6 +1,8 @@
 import React from "react";
+import {useNavigate} from 'react-router-dom'
 
 const Login = () => {
+  const navigate=useNavigate();
   return (
     <div className="flex justify-center mt-20 min-h-auto px-4">
       <div className="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
@@ -42,9 +44,10 @@ const Login = () => {
 
         <div className="flex text-base sm:text-lg justify-center gap-2 sm:gap-5 mt-5">
           <p className="font-thin text-md">Login as doctor ?</p>
-          <a href="/doctorlogin" className="text-blue-500 hover:underline text-md">
+{/*           <a href="/doctorlogin" className="text-blue-500 hover:underline text-md">
             Login
-          </a>
+          </a> */}
+          <p onClick={()=>{navigate('/doctorlogin');scrollTo(0,0)}} className="text-blue-500 hover:underline text-md">Login</p>
         </div>
       </div>
     </div>
