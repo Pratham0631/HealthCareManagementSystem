@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AppForm from "./pages/AppForm";
 import DoctorLogin from "./pages/DoctorLogin";
-import Dashboard from "./pages/Dashboard";
+
 
 function App() {
   const [count, setCount] = useState(0);
