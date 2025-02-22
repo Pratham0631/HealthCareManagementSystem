@@ -44,7 +44,7 @@ Database: MongoDB
 
 Authentication: JWT (JSON Web Token) for secure login
 
-Deployment: Vercel
+Deployment: Vercel, Github
 
 
 
