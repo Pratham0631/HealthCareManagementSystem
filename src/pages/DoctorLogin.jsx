@@ -1,6 +1,7 @@
 import React from "react";
 
 const DoctorLogin = () => {
+  const navigate=useNavigate();
   return (
     <div className="flex justify-center mt-20 min-h-auto px-4">
       <div className="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
@@ -42,9 +43,7 @@ const DoctorLogin = () => {
 
         <div className="flex text-base sm:text-lg justify-center gap-2 sm:gap-5 mt-5">
           <p className="font-thin text-md">Login as User ?</p>
-          <a href="/login" className="text-blue-500 hover:underline text-md">
-            Login
-          </a>
+          <p onClick={()=>{navigate('/login');scrollTo(0,0)}} className="text-blue-500 hover:underline text-md">Login</p>
         </div>
       </div>
     </div>
