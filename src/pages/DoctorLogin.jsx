@@ -1,13 +1,13 @@
 import React from "react";
-import {useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom';
 
-const Login = () => {
+const DoctorLogin = () => {
   const navigate=useNavigate();
   return (
     <div className="flex justify-center mt-20 min-h-auto px-4">
       <div className="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
         <h1 className="text-3xl sm:text-4xl font-semibold text-center">
-          Login as User
+          Login as Doctor
         </h1>
 
         <div className="mt-6">
@@ -43,15 +43,12 @@ const Login = () => {
         </div>
 
         <div className="flex text-base sm:text-lg justify-center gap-2 sm:gap-5 mt-5">
-          <p className="font-thin text-md">Login as doctor ?</p>
-{/*           <a href="/doctorlogin" className="text-blue-500 hover:underline text-md">
-            Login
-          </a> */}
-          <p onClick={()=>{navigate('/doctorlogin');scrollTo(0,0)}} className="text-blue-500 hover:underline text-md">Login</p>
+          <p className="font-thin text-md">Login as User ?</p>
+          <p onClick={()=>{navigate('/login');scrollTo(0,0)}} className="text-blue-500 hover:underline text-md">Login</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default DoctorLogin;
